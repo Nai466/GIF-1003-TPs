@@ -46,13 +46,13 @@ namespace biblio
   public:
 
 
-    Reference (const std::string& p_auteur, const std::string& p_titre, const std::string& p_identifiant, const int& p_annee);
-    int reqAnnee () const;
+    Reference (const std::string& p_auteur, const std::string& p_titre, const std::string& p_identifiant,  int p_annee);
+    int reqAnnee ();
     void asgAnnee (const int& p_annee);
     const std::string& reqAuteur () const;
     const std::string& reqIdentifiant () const;
     const std::string& reqTitre () const;
-    std::string reqReferenceFormate ();
+    std::string reqReferenceFormate () const;
     bool operator== (const Reference& p_reference) const;
 
 

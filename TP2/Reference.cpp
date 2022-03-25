@@ -47,7 +47,7 @@ namespace biblio
    */
 
   int
-  Reference::reqAnnee () const
+  Reference::reqAnnee ()
   {
 
     return m_annee;
@@ -112,7 +112,7 @@ namespace biblio
    */
 
   std::string
-  Reference::reqReferenceFormate ()
+  Reference::reqReferenceFormate () const
   {
 
     std::ostringstream ss;

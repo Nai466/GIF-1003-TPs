@@ -29,13 +29,13 @@ namespace biblio
 
   /**
    *\brief constructeur de la classe Reference.
-   *\param p_annee l'année d'édition du livre.
-   *\param p_auteur le nom complet sous format valide de l'auteur valide;
-   *\param p_identifiant l'identifiant de la reference du code il peut être soit le code ISSN ou le code ISBN.
-   *\param p_titre le titre du livre.
+   *\param[in] p_annee l'année d'édition du livre.
+   *\param[in] p_auteur le nom complet sous format valide de l'auteur valide;
+   *\param[in] p_identifiant l'identifiant de la reference du code il peut être soit le code ISSN ou le code ISBN.
+   *\param[in] p_titre le titre du livre.
    */
 
-  Reference::Reference (const std::string& p_auteur, const std::string& p_titre, const std::string& p_identifiant, const int& p_annee) : m_annee (p_annee), m_auteurs (p_auteur), m_identifiant (p_identifiant), m_titre (p_titre) {
+  Reference::Reference (const std::string& p_auteur, const std::string& p_titre, const std::string& p_identifiant, int p_annee) : m_annee (p_annee), m_auteurs (p_auteur), m_identifiant (p_identifiant), m_titre (p_titre) {
 
     //todo Auto-generated constructor stub
   }
@@ -135,7 +135,7 @@ namespace biblio
   bool Reference::operator== (const Reference& p_reference) const
   {
 
-    if (p_reference.reqAnnee () == m_annee and p_reference.reqTitre () == m_titre and p_reference.reqAuteur () == m_auteurs and p_reference.reqIdentifiant () == m_identifiant)
+    if (p_reference.reqAnnee () == m_annee && p_reference.reqTitre () == m_titre && p_reference.reqAuteur () == m_auteurs && p_reference.reqIdentifiant () == m_identifiant)
       {
         return true;
       }

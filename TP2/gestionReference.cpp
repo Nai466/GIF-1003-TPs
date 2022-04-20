@@ -137,8 +137,10 @@ main ()
   // Retourner toute la reference du livre.
 
   cout << "------------------------------------------" << endl << endl;
+  
+  Reference Ref1(auteur, titre, int_Annee, identifiant);
 
-  cout << auteur << " , " << titre << " , " << int_Annee << " , " << identifiant << endl << endl << endl;
+  cout << Ref1.reqReferenceFormate() << endl;
 
   cout << "Fin du programme." << endl;
 

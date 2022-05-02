@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetrePrincipale</class>
+ <widget class="QMainWindow" name="fenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>863</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>fenetrePrincipale</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="MessageDeBienvenu">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>421</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bienvenue dans la fenetre de gestion de référence bibliographiques.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>401</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>======================================================</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>741</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>En haut à gauche, il y a un bouton  &quot;Operations&quot;. Ce dernier constitue le menu de la gestion des références bibliographiques.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>581</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pour pouvoir  ajouter une référence quelconque, il suffit de suivre les instructions de l'assistance.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Il va falloir choisir si vous voulez  saisir un ouvrage ou un journal. </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>771</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Une fois que vous avez saisi une reference, si vous souhaiteriez la supprimer ; vous n'avez qu'à suivre les instructions de l'assistance.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>371</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ici s'afficheront les références bibliographiques enregistrées.</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="affichage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>831</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>863</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOperations">
+    <property name="title">
+     <string>Operations</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_une_r_f_rence">
+     <property name="title">
+      <string>Ajouter une référence</string>
+     </property>
+     <addaction name="actionAjouter_un_journal_6"/>
+     <addaction name="actionAjouter_un_ouvrage_5"/>
+    </widget>
+    <addaction name="menuAjouter_une_r_f_rence"/>
+    <addaction name="actionSupprimer_une_r_f_rence"/>
+    <addaction name="actionQuitter_la_fenetre"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuOperations"/>
+  </widget>
+  <action name="actionAjouter">
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionQuitter_2">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal">
+   <property name="text">
+    <string>Ajouter    un journal</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal_2">
+   <property name="text">
+    <string>Ajouter un journal</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_ouvrage">
+   <property name="text">
+    <string>Ajouter un ouvrage</string>
+   </property>
+  </action>
+  <action name="actionBibliographie_2">
+   <property name="text">
+    <string>Bibliographie</string>
+   </property>
+  </action>
+  <action name="actionSaisir_le_nom">
+   <property name="text">
+    <string>Saisir le nom</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_ouvrage_2">
+   <property name="text">
+    <string>Ajouter un ouvrage</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal_3">
+   <property name="text">
+    <string>Ajouter un journal</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_r_f_rence">
+   <property name="text">
+    <string>Supprimer une référence</string>
+   </property>
+  </action>
+  <action name="actionQuitter_la_fenetre">
+   <property name="text">
+    <string>Quitter la fenetre</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_ouvrage_3">
+   <property name="text">
+    <string>Ajouter un ouvrage</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal_4">
+   <property name="text">
+    <string>Ajouter un journal</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_ouvrage_4">
+   <property name="text">
+    <string>Ajouter un ouvrage</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal_5">
+   <property name="text">
+    <string>Ajouter un journal</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_journal_6">
+   <property name="text">
+    <string>Ajouter un journal</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_ouvrage_5">
+   <property name="text">
+    <string>Ajouter un ouvrage</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter_la_fenetre</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAjouter_un_journal_6</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>ajouterJournal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>418</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAjouter_un_ouvrage_5</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>ajouterOuvrage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>418</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSupprimer_une_r_f_rence</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>supprimerReferenceBibliographiques()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>418</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ajouterJournal()</slot>
+  <slot>ajouterOuvrage()</slot>
+  <slot>supprimerReferenceBibliographiques()</slot>
+ </slots>
+</ui>

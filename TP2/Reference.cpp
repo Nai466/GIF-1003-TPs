@@ -47,7 +47,7 @@ namespace biblio
    */
 
   int
-  Reference::reqAnnee ()
+  Reference::reqAnnee () const
   {
 
     return m_annee;
@@ -60,7 +60,7 @@ namespace biblio
    * \param p_annee la nouvelle annee
    */
   void
-  Reference::asgAnnee (const int& p_annee)
+  Reference::asgAnnee (int p_annee)
   {
 
     m_annee = p_annee;

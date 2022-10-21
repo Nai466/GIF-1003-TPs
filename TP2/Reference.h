@@ -47,7 +47,7 @@ namespace biblio
 
 
     Reference (const std::string& p_auteur, const std::string& p_titre, const std::string& p_identifiant,  int p_annee);
-    int reqAnnee ();
+    int reqAnnee () const;
     void asgAnnee (int& p_annee);
     const std::string& reqAuteur () const;
     const std::string& reqIdentifiant () const;

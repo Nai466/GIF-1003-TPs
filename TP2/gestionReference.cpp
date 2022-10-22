@@ -83,30 +83,30 @@ main ()
   //validation de l'annee de l'edition du livre.
 
 
-  int int_Annee;
+  int Annee;
 
   cout << "Veuillez entrer une année d'édition du livre :" << endl;
-  cin >> int_Annee; //on demande à l'utilisateur de rentrer l'année d'édition du livre.
+  cin >> Annee; //on demande à l'utilisateur de rentrer l'année d'édition du livre.
   //tant que l'année est incorrecte on demandera toujours à l'utilisateur de rentrer une valeur valide d'annnée d'édition.
-  while (int_Annee < 0)
+  while (Annee < 0)
     {
 
       cout << "La date d'édition du livre n'est pas valide !" << endl;
 
       cout << "Veuillez réessayer : " << endl;
-      cin >> int_Annee;
+      cin >> Annee;
 
-      if (int_Annee > 0)
+      if (Annee > 0)
         {
 
-          cout << "La date de l'édition du livre est : " << int_Annee << endl;
+          cout << "La date de l'édition du livre est : " << Annee << endl;
 
         }
 
 
     }
 
-  cout << "La date de l'édition du livre est : " << int_Annee << endl;
+  cout << "La date de l'édition du livre est : " << Annee << endl;
 
 
   cout << "-------------------------------------------" << endl << endl;
@@ -138,7 +138,7 @@ main ()
 
   cout << "------------------------------------------" << endl << endl;
   
-  Reference Ref1(auteur, titre, int_Annee, identifiant);
+  Reference Ref1(auteur, titre, Annee, identifiant);
 
   cout << Ref1.reqReferenceFormate() << endl;
 
